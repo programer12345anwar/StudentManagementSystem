@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: student-management-system
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: MYSQL_URL
+        value: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}
+      - key: MYSQL_USERNAME
+        value: ${MYSQLUSER}
+      - key: MYSQL_PASSWORD
+        value: ${MYSQLPASSWORD}
+      - key: PORT
+        value: 8080
