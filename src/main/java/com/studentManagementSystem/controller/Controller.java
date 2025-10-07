@@ -11,6 +11,7 @@ import com.studentManagementSystem.entity.Student;
 import com.studentManagementSystem.service.StudentService;
 
 @org.springframework.stereotype.Controller
+
 public class Controller {
 	@Autowired
 	private StudentService service;
